@@ -4,43 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niko Zuppas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #121212;
+            background: linear-gradient(135deg, #292929 0%, #1b1b1b 100%);
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
-        header, footer, section {
+        header, footer {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             max-width: 960px;
             margin: auto;
             padding: 20px;
         }
+        .left-content, .info-right {
+            width: 65%;
+        }
+        .info-right {
+            width: 30%;
+            padding-left: 5%; /* Creates a gutter between columns */
+        }
         img {
-            max-width: 30%; /* Smaller image */
+            max-width: 100%;
             height: auto;
-            float: left;
-            margin-right: 20px; /* Buffer between text and image */
+            border-radius: 4px;
         }
         .circle-image {
-            width: 200px; /* Specific size */
-            height: 200px; /* Maintain aspect ratio */
-            border-radius: 50%; /* Circular image */
-            float: right; /* Align to the right */
+            width: 100px; /* Reduced for alignment */
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             margin-top: 20px;
         }
         a {
-            color: #39ff14; /* Neon green links */
+            color: #39ff14;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
-        }
-        .info-right {
-            float: right;
-            width: 30%;
-            text-align: left;
         }
         .clear {
             clear: both;
@@ -49,22 +63,23 @@
 </head>
 <body>
     <header>
-        <img src="images/niko_and_scout.jpg" alt="Niko and Scout">
+        <img src="images/niko_and_scout.jpg" alt="Niko and Scout" style="max-width: 30%;">
         <h1 style="text-align: center;">Niko Zuppas</h1>
     </header>
-    <section>
-        <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
-        <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
-        <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
+    <div class="main-content">
+        <div class="left-content">
+            <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
+            <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
+            <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
+        </div>
         <div class="info-right">
             <h2>Downloads</h2>
             <a href="docs/Zuppas_CV_7_2024.pdf" download>Download My CV</a>
             <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="mailto:zuppas.3@osu.edu">zuppas.3@osu.edu</a>. Code for my projects <a href="https://github.com/nzupp">GitHub</a> (Currently under construction!).</p>
+            <p>You can reach me via email at <a href="mailto:n.zuppas@osu.edu">n.zuppas@osu.edu</a> or follow my updates on <a href="https://github.com/nzupp">GitHub</a>.</p>
             <img src="images/diving.jpg" alt="Diving Research" class="circle-image">
         </div>
-        <div class="clear"></div>
-    </section>
+    </div>
     <footer>
         <!-- Footer content -->
     </footer>
