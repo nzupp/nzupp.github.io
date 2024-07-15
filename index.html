@@ -1,65 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dark Themed Mobile App</title>
-<style>
-    body, html {
-        height: 100%;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        color: white;
-        background-color: #333;
-    }
-    .container {
-        display: flex;
-        height: 100%;
-        flex-direction: column; /* Changed to column layout */
-    }
-    .image-section, .text-section {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow: auto;
-    }
-    .image-section {
-        background: url('images/niko_and_scout.jpg') no-repeat center center;
-        background-size: contain; /* Changed to contain to ensure full visibility */
-    }
-    .text-section {
-        background-color: #444;
-        text-align: left;
-        padding: 30px; /* More padding for text readability */
-    }
-    a {
-        color: #9cdf7c; /* Light green for links to stand out */
-    }
-    @media (max-width: 600px) {
-        .container {
-            flex-direction: column;
-        }
-        .image-section, .text-section {
-            height: 50%;
-        }
-    }
-</style>
-</head>
-<body>
-<div class="container">
-    <div class="image-section">
-        <!-- Adjust the path to your image -->
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex: 1; padding-right: 20px;">
+        <img src="images/niko_and_scout.jpg" alt="Niko and Scout" style="max-width: 100%; height: auto;">
     </div>
-    <div class="text-section">
-        <h1>About Me</h1>
-        <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
-        <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
-        <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
+    <div style="flex: 1;">
+        <p>
+            I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.
+        </p>
+        <p>
+            I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.
+        </p>
+        <p>
+            Outside of research, I enjoy hiking, reading, and spending time with family and friends.
+        </p>
     </div>
 </div>
-</body>
-</html>
-
