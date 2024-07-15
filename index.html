@@ -35,9 +35,9 @@
             margin: 10px;
         }
         img.main-image {
-            width: 100%; /* Full width of its container */
-            height: auto;
-            margin-bottom: 20px; /* Space between image and text */
+            width: auto; /* Adapt width to maintain aspect ratio */
+            max-height: 300px; /* Max height to ensure it fits well in layout */
+            margin-right: 20px; /* Space between image and text */
         }
         .circle-image {
             width: 100px;
@@ -58,6 +58,10 @@
             }
             .left-content, .info-right {
                 flex-basis: 100%; /* Takes full width on small screens */
+            }
+            .main-image {
+                max-height: 200px; /* Smaller max height for mobile */
+                margin-right: 0; /* Remove margin on mobile */
             }
             .circle-image {
                 width: 50px; /* Smaller image on mobile */
@@ -83,8 +87,7 @@
             <h2>Downloads</h2>
             <a href="docs/Zuppas_CV_7_2024.pdf" download>Download My CV</a>
             <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="mailto:zuppas.3@osu.edu">zuppas.3@osu.edu</a></p>
-            <p>Find project code on my <a href="https://github.com/nzupp">GitHub</a> (under construction!)</p>
+            <p>You can reach me via email at <a href="mailto:n.zuppas@osu.edu">n.zuppas@osu.edu</a> or follow my updates on <a href="https://github.com/nzupp">GitHub</a>.</p>
             <img src="images/diving.jpg" alt="Diving Research" class="circle-image">
         </div>
     </div>
@@ -93,4 +96,3 @@
     </footer>
 </body>
 </html>
-        
