@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Scientific Portfolio</title>
+    <title>Niko Zuppas</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        header, footer, section {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Research Portfolio</h1>
+        <img src="images/niko_and_scout.jpg" alt="Niko and Scout">
+        <h1 style="text-align: center;">Niko Zuppas</h1>
     </header>
     <section>
-        <h2>About Me</h2>
-        <p>Here you can introduce yourself and your research interests.</p>
+        <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
+        <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
+        <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
+        <div class="clear"></div>
     </section>
     <section>
-        <h2>Research Goals</h2>
-        <p>Briefly discuss your research goals and what you are aiming to achieve.</p>
-    </section>
-    <section>
-        <h2>Images</h2>
-        <img src="images/niko_and_scout.jpg" alt="Research Image 1">
-        <img src="images/diving.jpg" alt="Research Image 2">
+        <img src="images/diving.jpg" alt="Diving Research" style="max-width: 50%; float: none; display: block; margin: auto;">
     </section>
     <section>
         <h2>Downloads</h2>
@@ -28,8 +45,7 @@
     </section>
     <footer>
         <h2>Contact Me</h2>
-        <p>Include your contact information or a form here.</p>
-        <a href="https://github.com/nzupp">Visit my GitHub</a>
+        <p>You can reach me via email at <a href="mailto:n.zuppas@osu.edu">n.zuppas@osu.edu</a> or follow my updates on <a href="https://github.com/nzupp">GitHub</a>.</p>
     </footer>
 </body>
 </html>
