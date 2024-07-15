@@ -14,7 +14,7 @@
             padding: 0;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
-        header, footer {
+        header, footer, .main-content {
             max-width: 960px;
             margin: auto;
             padding: 20px;
@@ -24,33 +24,25 @@
         }
         .main-content {
             display: flex;
+            flex-wrap: wrap; /* Allows flex items to wrap */
             justify-content: space-between;
             align-items: flex-start;
-            max-width: 960px;
-            margin: auto;
-            padding: 20px;
         }
-        .left-content {
-            width: 65%;
-            display: flex;
+        .left-content, .info-right {
+            flex: 1 1 300px; /* Flex grow, shrink and basis */
         }
-        .text {
-            width: 70%; /* Adjusted width for text next to the image */
+        .text, .info-right {
+            margin: 10px;
         }
         img.main-image {
-            max-width: 30%;
+            width: 100%; /* Full width of its container */
             height: auto;
-            margin-right: 20px; /* Space between image and text */
-        }
-        .info-right {
-            width: 30%;
-            padding-left: 5%; /* Creates a gutter between columns */
+            margin-bottom: 20px; /* Space between image and text */
         }
         .circle-image {
-            width: 100px; /* Correct alignment */
+            width: 100px;
             height: 100px;
             border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             margin-top: 20px;
         }
         a {
@@ -59,6 +51,18 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .main-content, header, footer {
+                padding: 10px;
+            }
+            .left-content, .info-right {
+                flex-basis: 100%; /* Takes full width on small screens */
+            }
+            .circle-image {
+                width: 50px; /* Smaller image on mobile */
+                height: 50px;
+            }
         }
     </style>
 </head>
@@ -89,3 +93,4 @@
     </footer>
 </body>
 </html>
+        
