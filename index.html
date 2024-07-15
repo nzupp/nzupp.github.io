@@ -15,7 +15,6 @@
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
         header, footer {
-            max-width: 960px;
             margin: auto;
             padding: 10px;
             background: rgba(255, 255, 255, 0.05);
@@ -24,22 +23,24 @@
             text-align: center;
         }
         .main-content {
-            max-width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
             margin: auto;
             padding: 10px;
         }
-        .main-image {
-            width: 100%; /* Full width to fit mobile screens */
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 4px;
+        .image-container {
+            flex: 50%; /* takes up half of the container */
+            padding: 10px;
         }
-        .circle-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto; /* Centering the circle image */
+        .text-container {
+            flex: 50%; /* takes up the other half */
+            padding: 10px;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
         }
         a {
             color: #39ff14;
@@ -52,6 +53,14 @@
             margin-top: 20px;
             text-align: center; /* Centering content for mobile */
         }
+        @media (max-width: 600px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .image-container, .text-container {
+                flex: 100%; /* each takes full width on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -59,8 +68,10 @@
         <h1>Niko Zuppas</h1>
     </header>
     <div class="main-content">
-        <img src="images/niko_and_scout.jpg" alt="Niko and Scout" class="main-image">
-        <div>
+        <div class="image-container">
+            <img src="images/niko_and_scout.jpg" alt="Niko and Scout" class="main-image">
+        </div>
+        <div class="text-container">
             <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
             <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
             <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
