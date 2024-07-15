@@ -15,8 +15,9 @@
     .container {
         display: flex;
         height: 100%;
+        flex-direction: column; /* Changed to column layout */
     }
-    .left, .right {
+    .image-section, .text-section {
         flex: 1;
         display: flex;
         align-items: center;
@@ -25,11 +26,11 @@
         box-sizing: border-box;
         overflow: auto;
     }
-    .left {
+    .image-section {
         background: url('images/niko_and_scout.jpg') no-repeat center center;
-        background-size: cover; /* Adjust this if you want to see the full image without cropping */
+        background-size: contain; /* Changed to contain to ensure full visibility */
     }
-    .right {
+    .text-section {
         background-color: #444;
         text-align: left;
         padding: 30px; /* More padding for text readability */
@@ -41,7 +42,7 @@
         .container {
             flex-direction: column;
         }
-        .left, .right {
+        .image-section, .text-section {
             height: 50%;
         }
     }
@@ -49,10 +50,10 @@
 </head>
 <body>
 <div class="container">
-    <div class="left">
-        <!-- Image is set as the background in the CSS -->
+    <div class="image-section">
+        <!-- Adjust the path to your image -->
     </div>
-    <div class="right">
+    <div class="text-section">
         <h1>About Me</h1>
         <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
         <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
@@ -61,3 +62,4 @@
 </div>
 </body>
 </html>
+
