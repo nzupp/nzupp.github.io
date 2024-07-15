@@ -1,91 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niko Zuppas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(135deg, #292929 0%, #1b1b1b 100%);
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Themed Mobile App</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #333;
+    }
+    .container {
+        display: flex;
+        height: 100%;
+    }
+    .left, .right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+    .left {
+        background: url('images/niko_and_scout.jpg') no-repeat center center;
+        background-size: cover; /* Adjust this if you want to see the full image without cropping */
+    }
+    .right {
+        background-color: #444;
+        text-align: left;
+        padding: 30px; /* More padding for text readability */
+    }
+    a {
+        color: #9cdf7c; /* Light green for links to stand out */
+    }
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
         }
-        header, footer {
-            margin: auto;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: center;
+        .left, .right {
+            height: 50%;
         }
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            margin: auto;
-            padding: 10px;
-        }
-        .image-container {
-            flex: 50%; /* takes up half of the container */
-            padding: 10px;
-        }
-        .text-container {
-            flex: 50%; /* takes up the other half */
-            padding: 10px;
-        }
-        .main-image {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        a {
-            color: #39ff14;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .info-section {
-            margin-top: 20px;
-            text-align: center; /* Centering content for mobile */
-        }
-        @media (max-width: 600px) {
-            .main-content {
-                flex-direction: column;
-            }
-            .image-container, .text-container {
-                flex: 100%; /* each takes full width on smaller screens */
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Niko Zuppas</h1>
-    </header>
-    <div class="main-content">
-        <div class="image-container">
-            <img src="images/niko_and_scout.jpg" alt="Niko and Scout" class="main-image">
-        </div>
-        <div class="text-container">
-            <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
-            <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
-            <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
-        </div>
-        <div class="info-section">
-            <h2>Downloads</h2>
-            <a href="docs/Zuppas_CV_7_2024.pdf" download>Download My CV</a>
-            <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="mailto:n.zuppas@osu.edu">n.zuppas@osu.edu</a> or follow my updates on <a href="https://github.com/nzupp">GitHub</a>.</p>
-            <img src="images/diving.jpg" alt="Diving Research" class="circle-image">
-        </div>
+<div class="container">
+    <div class="left">
+        <!-- Image is set as the background in the CSS -->
     </div>
-    <footer>
-        <!-- Optional Footer Content -->
-    </footer>
+    <div class="right">
+        <h1>About Me</h1>
+        <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
+        <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
+        <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
+    </div>
+</div>
 </body>
 </html>
