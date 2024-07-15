@@ -14,36 +14,32 @@
             padding: 0;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
         }
-        header, footer, .main-content {
+        header, footer {
             max-width: 960px;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
             background: rgba(255, 255, 255, 0.05);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            text-align: center;
         }
         .main-content {
-            display: flex;
-            flex-wrap: wrap; /* Allows flex items to wrap */
-            justify-content: space-between;
-            align-items: flex-start;
+            max-width: 960px;
+            margin: auto;
+            padding: 10px;
         }
-        .left-content, .info-right {
-            flex: 1 1 300px; /* Flex grow, shrink and basis */
-        }
-        .text, .info-right {
-            margin: 10px;
-        }
-        img.main-image {
-            width: auto; /* Adapt width to maintain aspect ratio */
-            max-height: 300px; /* Max height to ensure it fits well in layout */
-            margin-right: 20px; /* Space between image and text */
+        .main-image {
+            width: 100%; /* Full width to fit mobile screens */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 4px;
         }
         .circle-image {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            margin-top: 20px;
+            display: block;
+            margin: 20px auto; /* Centering the circle image */
         }
         a {
             color: #39ff14;
@@ -52,38 +48,24 @@
         a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .main-content, header, footer {
-                padding: 10px;
-            }
-            .left-content, .info-right {
-                flex-basis: 100%; /* Takes full width on small screens */
-            }
-            .main-image {
-                max-height: 200px; /* Smaller max height for mobile */
-                margin-right: 0; /* Remove margin on mobile */
-            }
-            .circle-image {
-                width: 50px; /* Smaller image on mobile */
-                height: 50px;
-            }
+        .info-section {
+            margin-top: 20px;
+            text-align: center; /* Centering content for mobile */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 style="text-align: center;">Niko Zuppas</h1>
+        <h1>Niko Zuppas</h1>
     </header>
     <div class="main-content">
-        <div class="left-content">
-            <img src="images/niko_and_scout.jpg" alt="Niko and Scout" class="main-image">
-            <div class="text">
-                <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
-                <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
-                <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
-            </div>
+        <img src="images/niko_and_scout.jpg" alt="Niko and Scout" class="main-image">
+        <div>
+            <p>I'm a computer scientist turned evolutionary biologist, focusing on applying deep learning methods to genomics. My research interests include generative modeling and population genetics. Currently, I'm exploring using transfer learning as a tool to estimate genomic variation in populations with small sample sizes.</p>
+            <p>I'm a master's student at Ohio State University in the <a href="https://carstenslab.osu.edu">Carstens lab</a> and am exploring PhD opportunities. My goal is to contribute to the field by bridging computational and biological approaches.</p>
+            <p>Outside of research, I enjoy hiking, reading, and spending time with family and friends.</p>
         </div>
-        <div class="info-right">
+        <div class="info-section">
             <h2>Downloads</h2>
             <a href="docs/Zuppas_CV_7_2024.pdf" download>Download My CV</a>
             <h2>Contact Me</h2>
@@ -92,7 +74,7 @@
         </div>
     </div>
     <footer>
-        <!-- Footer content -->
+        <!-- Optional Footer Content -->
     </footer>
 </body>
 </html>
