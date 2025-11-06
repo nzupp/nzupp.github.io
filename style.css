@@ -103,44 +103,6 @@ img {
 }
 
 /* Publications Page */
-.publication-section {
-    margin-bottom: 50px;
-}
-
-.publication-item {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #242424;
-    border-radius: 8px;
-    border-left: 4px solid #4da6ff;
-}
-
-.pub-authors {
-    margin-bottom: 5px;
-    color: #b0b0b0;
-}
-
-.pub-title {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ffffff;
-}
-
-.pub-journal {
-    margin-bottom: 10px;
-    color: #e0e0e0;
-}
-
-.pub-links {
-    margin-top: 10px;
-}
-
-.pub-links a {
-    margin-right: 15px;
-}
-
-/* Publications Page */
 .publications-section {
     margin-bottom: 50px;
 }
