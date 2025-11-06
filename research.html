@@ -23,7 +23,12 @@
         <h1>Research</h1>
         <div style="display: flex; gap: 40px; align-items: flex-start;">
             <div style="flex: 1;">
-                <p>Placeholder</p>
+                <h2>Improving inference in small sample contexts with domain adaptation</h2>
+                <p>Many fundamental questions in evolutionary biology depend on genomic data from populations with inherent sampling limitations, such as ancient human populations or extinct species. Small sample sizes distort the distributions of population genetic summary statistics, leading to unreliable inference. I develop methods to correct for this limitation using domain adaptation (a machine learning technique that transforms data distributions across related domains) to leverage well-sampled populations with similar evolutionary histories and improve inference in poorly sampled target populations.</p>
+                <p>Currently, I am working with generative models to learn bidirectional mappings between population domains without requiring paired samples (Zhang et al., 2017). We are validating the framework using human genomic data, and aim to demonstrate practical applications by refining demographic parameters for Neanderthals from Chagyrskaya cave and passenger pigeons from museum specimens in the near future.</p>
+                
+                <h2 style="margin-top: 40px;">Reinforcement learning environments for evolutionary biology</h2>
+                <p>Reinforcement learning has proven remarkably effective at pushing models beyond human performance in various domains, yet remains underutilized in evolutionary biology. I develop reinforcement learning environments that bridge this gap by integrating SLiM (a forward-time evolutionary simulator) with Gymnasium (a standard RL framework). Unlike traditional simulation approaches, this framework enables real-time interaction with evolutionary simulations through sequential decision-making and delayed reward signals, allowing agents to learn complex policies over evolutionary timescales. This opens new opportunities for conservation management, including optimizing genetic rescue strategies, species reintroduction protocols, and landscape connectivity design, by evaluating genomic outcomes across policy spaces that would be computationally infeasible to explore exhaustively. The framework also provides a novel approach to hypothesis generation in complex, multi-parameter evolutionary scenarios where intuition alone may be insufficient.</p>
             </div>
             <div style="flex: 0 0 400px;">
                 <img src="images/general.png" alt="General Research" style="width: 100%; display: block;">
