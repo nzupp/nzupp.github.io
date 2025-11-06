@@ -20,6 +20,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .nav-links {
