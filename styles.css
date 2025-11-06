@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* Navigation Bar */
 .navbar {
     background-color: #0d0d0d;
@@ -15,7 +14,6 @@ body {
     border-bottom: 2px solid #333;
     margin-bottom: 30px;
 }
-
 .nav-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,18 +22,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-name {
     color: #ffffff;
     font-size: 1.3em;
     font-weight: bold;
 }
-
 .nav-links {
     display: flex;
     gap: 30px;
 }
-
 .nav-links a {
     color: #e0e0e0;
     text-decoration: none;
@@ -44,78 +39,63 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .nav-links a:hover {
     background-color: #333;
     color: #ffffff;
 }
-
 .nav-links a.active {
     background-color: #a7c65c;
     color: #ffffff;
 }
-
 /* Main Content */
 .content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
 h1 {
     color: #ffffff;
     font-size: 2.4em;
 }
-
 h2 {
     color: #ffffff;
     font-size: 1.8em;
     margin-top: 30px;
 }
-
 a {
     color: #a7c65c;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 /* Image and Text Layout */
 .image-container {
     flex: 1;
     padding-right: 40px;
 }
-
 .text-container {
     flex: 1;
 }
-
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
-
 /* Research Page Sections */
 .research-section {
     margin-bottom: 40px;
 }
-
 .research-section ul {
     line-height: 1.8;
 }
-
 .research-section ul li {
     margin-bottom: 10px;
 }
-
 /* Publications Page */
 .publications-section {
     margin-bottom: 50px;
 }
-
 .publication-item {
     margin-bottom: 25px;
     padding: 15px;
@@ -123,24 +103,20 @@ img {
     border-radius: 6px;
     border-left: 3px solid #a7c65c;
 }
-
 .pub-authors {
     margin-bottom: 8px;
     color: #b0b0b0;
 }
-
 .pub-title {
     font-weight: bold;
     font-size: 1.1em;
     margin-bottom: 8px;
     color: #ffffff;
 }
-
 .pub-journal {
     color: #d0d0d0;
     margin-bottom: 0;
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .content > div {
