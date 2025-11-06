@@ -51,7 +51,7 @@ body {
 }
 
 .nav-links a.active {
-    background-color: #4da6ff;
+    background-color: #a7c65c;
     color: #ffffff;
 }
 
@@ -74,7 +74,7 @@ h2 {
 }
 
 a {
-    color: #4da6ff;
+    color: #a7c65c;
     text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ img {
     padding: 15px;
     background-color: #222;
     border-radius: 6px;
-    border-left: 3px solid #4da6ff;
+    border-left: 3px solid #a7c65c;
 }
 
 .pub-authors {
